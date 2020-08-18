@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+div#root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+div#header {
+    background-color: #001122;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+div#header > * {
+    background-color: #001122;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+div#header a {
+    display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: solid 2px #CCCCCC;
+    text-decoration: none;
+    color: #CCCCCC;
+}
+
+div#header a:hover {
+    color: #FFFFFF;
+}
+
+/* Content */
+
+div#content {
+    background-color: #EEEEEE;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+/* People */
+
+div.people-list {
+    display: flex;
+}
+
+div.people-list > * {
+    margin: 1em;
+}
+
+a.person-tile {
+    padding: 1em;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px 12px 0px #DEDEDE;
+}
+
+a.person-tile > * {
+    margin: 0.5em;
+}
+
+/* Person */
+
+div.person {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 0.5em;
+    box-shadow: 8px 8px 12px 0px #DEDEDE;
+}
+
+div.person > * {
+    margin: 0.5em;
+}
+
+input.display-name {
+    border: 0px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* General */
+
+div.flex-row {
+    display: flex;
+}
+
+div.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+div.separate-children-small > * {
+    margin: 0.25em;
+}
+
+div.separate-children > * {
+    margin: 0.5em;
+}
+
+div.circle-border {
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+div.circle-border img {
+    border-radius: 50%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+label > span {
+    text-transform: uppercase;
+    font-size: x-small;
+    color: #AAAAAA;
+}
+
+label > input {
+    border: 1px solid #CCCCCC;
+    padding: 0.5em;
+}

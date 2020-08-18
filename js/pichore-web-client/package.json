@@ -1,0 +1,28 @@
+{
+  "name": "pichore-web-client",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "main": "src/entry.tsx",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-photo-gallery": "^8.0.0",
+    "react-router-dom": "^5.2.0",
+    "tslib": "^2.0.1"
+  }
+}

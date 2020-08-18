@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" > /dev/null 2>&1 && pwd)"
+
+export UID
+
+USER="$(whoami)" \
+USER_SHELL="$(basename $SHELL)" \
+WORKSPACE="$(dirname $DIR)" \
+  docker-compose \
+    -p $USER \
+    -f tools/docker/dev/docker-compose.yml \
+    "$@"
